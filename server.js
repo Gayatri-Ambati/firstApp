@@ -1,13 +1,14 @@
 const express = require('express');
- 
+const path = require('path');
 const app = express();
  
+app.use(express.static(path.join(__dirname, "static")));
 app.get("/", function(req, res){
     res.send("Welcome to My Basic Site");
 })
  
 app.get("/resume", function(req, res){
-    filePathName=__dirname+"/resume.html"
+    filePathName=__dirname+'/html/resume.html';
     res.sendFile(filePathName);
 })
 
