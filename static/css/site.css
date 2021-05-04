@@ -1,5 +1,5 @@
 body{  
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUjJePre4r8q9bqZ0zbriWJnRXsVibCNM_g&usqp=CAU");
+    
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,13 +16,7 @@ p{
 {
     align-items: center;
 }
-input[type=text] {
-    background-color: white;
-    background-image: 'images/searchicon.jpg';
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding-left: 40px;
-  }
+
 .column {
     float: left;
     width: 33.33%;
