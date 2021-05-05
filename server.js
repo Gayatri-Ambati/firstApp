@@ -8,12 +8,17 @@ app.get("/", function(req, res){
 })
  
 app.get("/resume", function(req, res){
-    filePathName=__dirname+'/html/resume.html';
+    filePathName=__dirname+'/static/html/resume.html';
     res.sendFile(filePathName);
 })
 
 app.get("/google", function(req, res){
-    filePathName=__dirname+'/html/google.html';
+    filePathName=__dirname+'/static/html/google.html';
+    res.sendFile(filePathName);
+})
+
+app.get("/colour", function(req, res){
+    filePathName=__dirname+'/static/html/colour.html';
     res.sendFile(filePathName);
 })
 

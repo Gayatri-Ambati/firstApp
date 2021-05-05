@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = 
+    "https://tse3.mm.bing.net/th?id=OIP.RPRNhyltck8c5KoEpGkXdwHaEK&pid=Api&P=0&w=278&h=157" 
+            type = "image/x-icon">
+            <link rel="stylesheet" href="css/colour.css" type="text/css">
+        
+    <title>COLOUR PICKER</title>
+</head>
+<body>
+    <h1>&lt;Colour Picker/&gt;</h1>
+    <label for="red">Red (0-255)</label>
+    <input type="range" id="red" name="red" min="0" max="255" value="0"
+    oninput="red1.value=red.value">                                                       
+
+    <output id="red1" name="red1" for="red">0</output>
+    <br>
+    <label for="green">Green (0-255)</label>
+    <input type="range" id="green" name="green" min="0" max="255" value="0"
+    oninput="green1.value=green.value">                                                       
+
+    <output id="green1" name="green1" for="green">0</output> 
+    <br>
+    <label for="blue">Blue (0-255)</label>
+    <input type="range" id="blue" name="blue" min="0" max="255" value="0"
+    oninput="blue1.value=blue.value">                                                       
+
+    <output id="blue1" name="blue1" for="blue">0</output> 
+     <br>
+     <div id="rgb" width='50%' height='50%'>
+<br>
+<br>
+<br>
+<br>
+     </div>
+    <output id="hexVal"><span>&nbsp;</span>#000000<span>&nbsp;</span></output><button id="copy"><i class="fa fa-clone" aria-hidden="true"></i>
+    </button>
+    <script src="js/colour.js"></script>
+    <script src="https://use.fontawesome.com/1f2d0babb8.js"></script>
+</body>
+</html>
