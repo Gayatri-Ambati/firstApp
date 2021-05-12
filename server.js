@@ -32,6 +32,11 @@ app.get("/register", function(req, res){
     res.sendFile(filePathName);
 })
 
+app.get("/todo", function(req, res){
+    filePathName=__dirname+'/static/html/todo.html';
+    res.sendFile(filePathName);
+})
+
 app.get("/piechart", function(req, res){
     filePathName=__dirname+'/static/html/piechart.html';
     res.sendFile(filePathName);
