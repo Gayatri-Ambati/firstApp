@@ -56,6 +56,11 @@ app.get("/crudd", function(req, res){
     filePathName=__dirname+'/static/html/crud.html';
     res.sendFile(filePathName);
 })
+app.get("/tambola",function(req,res)
+{
+    filePathName=__dirname+'/static/html/tambola.html';
+    res.sendFile(filePathName);
+})
 app.get("/crud", courselib.getall);
 app.delete("/crud/:idd", courselib.deleteone);
 app.put("/crud/:idd", courselib.update);
